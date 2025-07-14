@@ -62,10 +62,6 @@ The app will open at `http://localhost:3000`
 - Make sure you've replaced the demo API key with your actual key
 - Check if your API key is active in your OpenWeatherMap account
 
-### "Failed to fetch weather data" Error
-- Check your internet connection
-- Verify the API key is valid
-- Try again in a few minutes
 
 ## API Information
 
@@ -73,32 +69,6 @@ This app uses the OpenWeatherMap API:
 - **Current Weather**: `https://api.openweathermap.org/data/2.5/weather`
 - **5-Day Forecast**: `https://api.openweathermap.org/data/2.5/forecast`
 
-## Technologies Used
 
-- React 18
-- CSS3 with modern features
-- Font Awesome icons
-- OpenWeatherMap API
 
-## File Structure
 
-```
-src/
-├── components/
-│   ├── CurrentWeather.jsx
-│   ├── Forecast.jsx
-│   ├── Header.jsx
-│   ├── SearchBar.jsx
-│   └── WeatherCard.jsx
-├── App.jsx
-├── index.js
-└── styles.css
-```
-
-## Contributing
-
-Feel free to submit issues and enhancement requests!
-
-## License
-
-This project is open source and available under the MIT License.
