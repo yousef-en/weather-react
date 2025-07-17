@@ -1,27 +1,27 @@
-import React from 'react';
+import React from "react";
 
 const CurrentWeather = ({ weather }) => {
   if (!weather) return null;
 
   const getWeatherIcon = (condition) => {
     const icons = {
-      'Clear': 'fas fa-sun',
-      'Clouds': 'fas fa-cloud',
-      'Rain': 'fas fa-cloud-rain',
-      'Snow': 'fas fa-snowflake',
-      'Thunderstorm': 'fas fa-bolt',
-      'Drizzle': 'fas fa-cloud-drizzle',
-      'Mist': 'fas fa-smog',
-      'Smoke': 'fas fa-smog',
-      'Haze': 'fas fa-smog',
-      'Dust': 'fas fa-smog',
-      'Fog': 'fas fa-smog',
-      'Sand': 'fas fa-smog',
-      'Ash': 'fas fa-smog',
-      'Squall': 'fas fa-wind',
-      'Tornado': 'fas fa-wind'
+      Clear: "fas fa-sun",
+      Clouds: "fas fa-cloud",
+      Rain: "fas fa-cloud-rain",
+      Snow: "fas fa-snowflake",
+      Thunderstorm: "fas fa-bolt",
+      Drizzle: "fas fa-cloud-drizzle",
+      Mist: "fas fa-smog",
+      Smoke: "fas fa-smog",
+      Haze: "fas fa-smog",
+      Dust: "fas fa-smog",
+      Fog: "fas fa-smog",
+      Sand: "fas fa-smog",
+      Ash: "fas fa-smog",
+      Squall: "fas fa-wind",
+      Tornado: "fas fa-wind",
     };
-    return icons[condition] || 'fas fa-cloud';
+    return icons[condition] || "fas fa-cloud";
   };
 
   return (
@@ -33,10 +33,12 @@ const CurrentWeather = ({ weather }) => {
         <div className="weather-info">
           <h2 className="temperature">{Math.round(weather.main.temp)}°C</h2>
           <p className="description">{weather.weather[0].description}</p>
-          <p className="location">{weather.name}, {weather.sys.country}</p>
+          <p className="location">
+            {weather.name}, {weather.sys.country}
+          </p>
         </div>
       </div>
-      
+
       <div className="weather-details">
         <div className="detail-item">
           <i className="fas fa-thermometer-half"></i>
@@ -59,4 +61,4 @@ const CurrentWeather = ({ weather }) => {
   );
 };
 
-export default CurrentWeather; 
+export default CurrentWeather;

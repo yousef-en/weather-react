@@ -7,7 +7,6 @@ import WeatherCard from './components/WeatherCard';
 import './styles.css';
 
 const API_KEY = "3045dd712ffe6e702e3245525ac7fa38";
-// Free OpenWeatherMap API key for testing
 const BASE_URL = 'https://api.openweathermap.org/data/2.5';
 
 function App() {
